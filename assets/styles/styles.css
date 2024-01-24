@@ -28,7 +28,7 @@ h1 {
     list-style-type: none;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.85);
-    margin-bottom: 20px; /* Add space between menu and content */
+    margin-bottom: 20px;
 }
 
 .menu-item {
@@ -103,11 +103,10 @@ footer.external_links {
     height: 36;
 }
 
-
 main {
     position: relative;
-    padding: 30px; /* Increased padding */
-    background-color: rgba(0, 0, 0, 0.85); /* Darker background for main content */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
     margin: 30px auto;
     max-width: 900px;
     border-radius: 25px;
@@ -120,7 +119,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px; /* Increased spacing between list items */
+    margin-bottom: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,15 +141,15 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 25px;
-    background-color: #222; /* Footer background */
+    background-color: #222;
 }
 
 .image-code {
     image-resolution: from-image;
     display: flex;
     justify-content: center;
-    height: 250px; /* Increased height for images */
-    border: 1px solid #ffdd00; /* Bright border for images */
+    height: 250px;
+    border: 1px solid #ffdd00;
     border-radius: 25px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     padding: 10px;
@@ -161,7 +160,7 @@ footer {
     display: flex;
     align-items: center;
     font-style: italic;
-    color: #ff758c; /* Edgy pink color for captions */
+    color: #ff758c;
     font-size: 28px;
     text-align: center;
     margin-top: 25px;
@@ -171,9 +170,14 @@ footer {
 footer.external_links {
     display: flex;
     justify-content: space-around;
-    color: #ffdd00; 
-    
+    color: #ffdd00;
     padding: 15px;
-    
-
 }
+
+
+
+footer.external_links img {
+    width: 30px;
+    height: 30px;
+}
+
