@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 function loadNavigation() {
     var navHtml = `<nav class="navigation-menu">
+    <div class="menu-item">
+        <span>Home</span>
+            <div class="sub-menu">
+                <a href="/pages/index.html">Home</a>
+            </div>
+        </div>
         <div class="menu-item">
             <span>Challenges & Projects </span>
             <div class="sub-menu">
