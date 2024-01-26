@@ -26,13 +26,50 @@ h1 {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    padding:20px;
+    /* background-color: rgba(0, 0, 0, 0.85); */
     margin-bottom: 20px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@keyframes gradient-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+}
+
+.navigation-menu {
+    /* Other styles... */
+    background: linear-gradient(-50deg, #ff758c, #ff7eb3, #ffb300, #302dff);
+    background-size: 400% 400%;
+    animation: gradient-background 7.5s ease infinite;
+}
+
+/* Interactive Hover Effects on Menu Items */
+.menu-item:hover {
+    color: #8f2106;
+    text-decoration: underline;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.sub-menu a:hover {
+    background-color: #4745bb;
+    color: #fff;
 }
 
 .menu-item {
     margin: 0 20px;
+    padding: 10px 20px;
     position: relative;
     color: #ffdd00;
     cursor: pointer;
@@ -60,7 +97,7 @@ h1 {
 }
 
 .sub-menu a:hover {
-    background-color: #4745bb;
+    background-color: #302dff;
 }
 
 .sub-menu-level2 {
@@ -97,6 +134,10 @@ h1 {
 
 main {
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 30px;
     background-color: rgba(47, 6, 6, 0.85);
     margin: 30px auto;
@@ -129,20 +170,42 @@ figcaption {
     font-style: italic;
 }
 
-
-
+.image-code figcaption {
+    color: #ffdd00;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
 .image-code {
-    image-resolution: from-image;
     display: flex;
+    font-weight: bold;
+    color: #ffdd00;
     justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 25px;
     height: 250px;
     border: 1px solid #ffdd00;
     border-radius: 25px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     padding: 10px;
-    margin-top: 25px;
+    padding-left:10px;}
+
+.image-code  img{
+    image-resolution: from-image;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    border-radius: 25px;
+    width: auto;
 }
 
+.image-code  img:hover {
+    transform: scale(2.2);
+}
 .week1 {
     display: flex;
     align-items: center;
@@ -161,6 +224,7 @@ footer {
     margin-top: 25px;
     color: #ffdd00;
     background-color: #40000b;
+    border-radius: 25px;
 }
 
 .external_links {
@@ -171,8 +235,104 @@ footer {
     color: #ffdd00;
 }
 
-.external_links img {
-    
-    width: 30px;
-    height: 30px;
+.external_links_logos img {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+.topic {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+@media screen and (max-width: 600px) {
+    .week-summary h2 {
+        font-size: 24px;
+    }
+    .topic {
+        margin-bottom: 15px;
+    }
+}
+
+.week-summary h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.topic h3 {
+    font-size: 24px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topic h4 {
+    font-size: 20px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.personal-info p {
+    font-size: 18px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-aboutme h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:any-link:active {
+        color: #ffcc00;
+        }
+
+.JavaScript-Challenges h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.JavaScript-Challenges code {
+    font-size: 18px;
+    color: #00ff22;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.JavaScript-Challenges .topic:hover {
+    transform: scale(1.1);
+}
+
+.topic code {
+    font-size: 18px;
+    color: #00ff22;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
 }

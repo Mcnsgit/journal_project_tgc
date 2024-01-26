@@ -15,7 +15,7 @@
                 <div class="menu-item">
                     <span>Home</span>
                     <div class="sub-menu">
-                        <a href="index.html">Home</a>
+                        <a href="/pages/index.html">Home</a>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -46,30 +46,20 @@
                 <div class="menu-item">
                     <span>Challenges & Projects  </span>
                     <div class="sub-menu">
-                        <a href="projects.html">Projects</a>
-                        <a href="resources.html">Resources</a>
-                        <a href="js_challenges.html">JavaScript</a>
-                        <a href="sql_challenges.html">SQL</a>
-                      </div>
+                        <a href="/pages/projects_challenges/js_challenges.html">JavaScript</a>
+                        <a href="/pages/projects_challenges/sql_challenge.html">SQL</a>
+                        <a href="/pages/projects_challenges/relational_Databases.html">Relational Databases</a>
+                        <a href="/pages/projects_challenges/employability.html">Employability</a>
+                    </div>
                     </div>
                 </div>
             </nav>
     </header>
     <main>
-        <h2>HTML, CSS & Relational Databases</h2>
-        <h3> HTML & Relational Databases: Aims</h3>
-            <ul>
-                <li>- Describe the purpose of functions.</li>
-                <li>- Work with both function declarations and arrow syntax, use parameters and arguments in functions.</li>
-                <li>- Apply the return keyword appropriately.</li>
-                <li>-Describe the reasons for using version control software when writing code.</li>
-                <li>- Set up git version control in projects.</li>
-                <li>- Use basic commands to stage, commit, and push files.</li>
-                <li>- Clone project code from remote repositories.</li>
-                <li>- Describe the benefits of using a branching model when writing code.</li>
-            </ul>
-        </p>
-        <div class="SQL container">
+        <section class="week-summary">
+            <h2> CSS & Relational Databases</h2>
+            <div class="topic">
+                <div class="SQL container">
             <h3>Data Types - SQL</h3>
             <p>Reference: <a href="https://www.w3schools.com/sql/sql_datatypes.asp">SQL Data Types at W3Schools</a></p>
             <ul>
@@ -98,7 +88,9 @@
                     (2, 'Clark', 'Phillip', '18 Lyon Grove', 'Manchester', 'M9 J77'),<br>
                     (3, 'Wilson', 'Sarah', 'Oak House, Oakwood Lane', 'Stockport', '5K3 9JJ');<br>
             </code>
+            </div>
         </div>
+        <div class="topic">
             <h3>CSS Enhancements and Properties</h3>
             <p>
                 Throughout this week, we delved into CSS by exploring various properties that enhance the visual appeal and layout of web pages. Key CSS properties we covered include:
@@ -113,16 +105,21 @@
                     <li><strong>Media Queries:</strong> Essential for creating responsive designs, allowing CSS to adapt to different screen sizes and orientations.</li>
                 </ul>
             </p>
-        <footer>
-            <div class ="external-links">
-            <a href="www.github.com/mcnsgit" rel="author" title="GitHub Profile">
-                <img src="path_to_github_logo.svg" alt="GitHub Logo" style="height: 40px; width: auto;">
-            </a>        
-            <a href="https://www.codewars.com/users/Mcnsgit" rel="author" title="Codewars Profile">
-                <img src="assets/logo.f607a0fb.svg" alt="Codewars Logo" style="height: 40px; width: auto;">
-            </a>
+
         </div>
+        </section>
+        <footer>
+            <div class="external_links_logos">
+                <a href="https://www.github.com/mcnsgit" title="GitHub Profile">
+                    <img src="/assets/images/iconmonstr-github-5.svg" alt="GitHub Logo"> <!-- Correct the image source -->
+                </a>
+                <a href="https://www.codewars.com/users/Mcnsgit" title="Codewars Profile">
+                    <img src="/assets/images/logo.svg" alt="Codewars Logo"> <!-- Correct the image source -->
+                </a>
+            </div>  
+            <div class="external-links">
             <p>© 2024 Journal by Miguel Cardiga. All rights reserved.</p>
+        </div>
         </footer>
 </body>
 
