@@ -13,15 +13,13 @@
         <h1>Journal - Week 3</h1>
             <nav class="navigation-menu">
                 <div class="menu-item">
-                    <span>Home</span>
-                    <div class="sub-menu">
-                        <a href="index.html">Home</a>
-                    </div>
+                        <a href="/pages/index.html">Home</a>
+
                 </div>
                 <div class="menu-item">
                     <span>About Me</span>
                     <div class="sub-menu">
-                        <a href="about_me.html">About Me</a>
+                        <a href="/pages/about_me.html">About Me</a>
                         <a href="portfolio.html">Portfolio</a>
                         <a href="cv.html">CV</a>
                     </div>
@@ -46,25 +44,24 @@
                 <div class="menu-item">
                     <span>Challenges & Projects  </span>
                     <div class="sub-menu">
-                        <a href="projects.html">Projects</a>
-                        <a href="resources.html">Resources</a>
-                        <a href="js_challenges.html">JavaScript</a>
-                        <a href="sql_challenges.html">SQL</a>
+                        <a href="/pages/projects_challenges/js_challenges.html">JavaScript</a>
+                        <a href="/pages/projects_challenges/sql_challenge.html">SQL</a>
+                        <a href="/pages/projects_challenges/relational_Databases.html">Relational Databases</a>
+                        <a href="/pages/projects_challenges/employability.html">Employability</a>
                     </div>
                 </div>   
             </div>             
             </nav>
     </header>
     <main>
-        <br>
-        <h2>Week 3 - HTML, CSS & Relational Databases</h2>
-        <br>
-        <div class="css container">
-            <h3CSS Flexbox and Alignment</h3>
-                <p>
-                    In Week 3, we continued our journey with CSS, focusing on learning the Flexbox layout model and
-                    understanding the nuances of CSS alignment properties. Here are the key topics we covered:
-                </p>
+        <section class="week-summary">
+            <h2>Week 3 - HTML, CSS & Relational Databases</h2>
+            <div class="topic">
+                <h3>CSS Flexbox and Alignment</h3>
+                <p>In Week 3, we continued our journey with CSS, focusing on learning the Flexbox layout model and understanding the nuances of CSS alignment properties.</p>
+                <div class="flexbox-summary">
+                    <!-- Flexbox Summary Content -->
+                
                 <ul>
                     <li><strong>Flexbox:</strong> Flexbox, or the Flexible Box Layout, is a one-dimensional layout
                         method
@@ -106,20 +103,21 @@
                                 and how Flexbox
                                 provides elegant solutions, making web design more efficient and visually appealing.</p>
                         </div>
+                    </div>
+            </div>
         </div>
-        <main>
-            <div class="RelationDatabases">
+            <div class="topic">                
                 <h3>Relational Databases</h3>
-        
+
                 <h4>Data inconsistency</h4>
                 <p>Occurs when identical data in different locations are not synchronized, leading to format differences or mismatches.</p>
-        
+                <br>
                 <h4>Data redundancy</h4>
                 <p>Refers to the repetition of the same data in multiple locations.</p>
-        
+                <br>
                 <h4>Foreign key</h4>
                 <p>A field or a combination of fields in a table that establishes a link between data in two tables, controlling the data stored in the foreign key table.</p>
-        
+                <br>
                 <h4>Advantages</h4>
                 <ul>
                     <li>Ease of management and scalability.</li>
@@ -127,7 +125,7 @@
                     <li>Reduced data redundancy and inconsistency.</li>
                     <li>Enhanced security with selective access controls.</li>
                 </ul>
-        
+                <br>
                 <h4>Types of Relational Databases</h4>
                 <ul>
                     <li>One-to-one: A single record in one table is linked to a single record in another.</li>
@@ -170,55 +168,69 @@
                     <li>3NF: Meets 2NF, all attributes only depend on the primary key.</li>
                 </ul>
             </div>
-            <div class="Multiple tables in SQL">
-                <p>CREATE TABLE members (
+            <div class="topic">
+                
+                <h3>SQL - Working with Multiple Tables</h3>
+                <p>Exploring SQL queries with multiple tables, focusing on JOIN operations and data normalization.</p>
+                <p> This code creates two tables, "members" and "bows", and inserts data into them</p>
+
+                <code>CREATE TABLE members (
                     memberID VARCHAR(6),
                     surname VARCHAR (20),
                     firstName VARCHAR (20),
                     member Type VARCHAR (10),
                     BowID INT
-                    );
+                    );</code>
+                    <br>
+                    <br>
+                    <code>
                     CREATE TABLE bows (
                     bowID INT,
                     bowType VARCHAR (20),
                     bowDraw INT
-                    );
-                    
+                    );</code>
+                    <br>
+                    <br>
+                    <code>
                     INSERT INTO members VALUES
                     ('52367', 'Mather', 'Paul', 'Senior', 22),
                     ('52157', 'Adamson', 'Sarah', 'Senior', 23),
                     ('31056', 'Williams', 'Ashley', 'Junior', 24),
                     ('50201', 'Mahr', 'Rashid', 'Senior', 25);
+                    </code> 
+                    <br>
+                    <br>
+                    <code>
                     INSERT INTO bows
                     VALUES
                     (22, 'Longbow', 42),
                     (23, 'Recurve', 30),
                     (24, 'Recurve', 16),
-                    (25, 'Compound', 50);
-                </p>
-                <p>
+                    (25, 'Compound', 50);</code>
+                    <p>The code performs a SELECT query to retrieve the surnames of members and the types of bows they have. It uses the INNER JOIN keyword to join the "members" and "bows" tables based on the bowID column. The result will be the surnames from the "members" table and the bow types from the "bows" table for the matching bowIDs.
+                </p> <code>
                     SELECT members. surname, bows. bowType
                     FROM members
                     INNER JOIN bows ON members. bowID = bows .bowID
+                    </code>
                     <br>
-                    the code performs a SELECT query to retrieve the surnames of members and the types of bows they have. It uses the INNER JOIN keyword to join the "members" and "bows" tables based on the bowID column. The result will be the surnames from the "members" table and the bow types from the "bows" table for the matching bowIDs.
-                </p>
+                   
             </div>
 
         </main>
-
-    <footer>
-        <a href="www.github.com/mcnsgit" rel="author" title="GitHub Profile">
-            <img src="path_to_github_logo.svg" alt="GitHub Logo" style="height: 40px; width: auto;">
-        </a>
-
-        <!-- Codewars Logo as a clickable link -->
-        <a href="https://www.codewars.com/users/Mcnsgit" rel="author" title="Codewars Profile">
-            <img src="assets/logo.f607a0fb.svg" alt="Codewars Logo" style="height: 40px; width: auto;">
-        </a>
-
-        <p>© 2024 Journal by Miguel Cardiga. All rights reserved.</p>
-    </footer>
+        <footer>
+            <div class="external_links_logos"> <!-- Ensure class name matches the one in CSS -->
+                <a href="https://www.github.com/mcnsgit" title="GitHub Profile">
+                    <img src="/assets/images/iconmonstr-github-5.svg" alt="GitHub Logo"> <!-- Correct the image source -->
+                </a>
+                <a href="https://www.codewars.com/users/Mcnsgit" title="Codewars Profile">
+                    <img src="/assets/images/logo.svg" alt="Codewars Logo"> <!-- Correct the image source -->
+                </a>
+            </div>  
+            <div class="external-links">
+            <p>© 2024 Journal by Miguel Cardiga. All rights reserved.</p>
+        </div>
+        </footer>
 </body>
 
 </html>
